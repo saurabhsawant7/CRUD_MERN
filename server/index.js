@@ -6,7 +6,7 @@ const usersModel=require('./models/users.model')
 const app = express();
 app.use(cors(
 	{
-		origin:['https://crud-mern-frontend-steel.vercel.app/'],
+		origin:['https://crud-mern-frontend-steel.vercel.app'],
 		method: ['POST','GET'],
 		credentials:true
 	}
