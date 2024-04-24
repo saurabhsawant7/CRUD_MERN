@@ -14,7 +14,7 @@ const User = () => {
 		.catch(err=>console.log(err))
 	}
 	useEffect(()=>{
-		axios.get('http://localhost:3000')
+		axios.get('https://crud-mern-ten.vercel.app')
 		.then(res=>setUser(res.data))
 		.catch(err=>console.log(err))
 	},[])
