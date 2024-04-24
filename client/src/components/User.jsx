@@ -7,7 +7,7 @@ const User = () => {
 	const [users,setUser]=useState([]);
 
 	const handleDelete=(id)=>{
-		axios.delete("http://localhost:3000/deleteUser/"+id)
+		axios.delete("https://crud-mern-ten.vercel.app/deleteUser/"+id)
 		.then(res=>{
 			console.log(res)
 		window.location.reload()})
