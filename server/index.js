@@ -4,11 +4,17 @@ const cors=require('cors');
 const usersModel=require('./models/users.model')
 
 const app = express();
-app.use(cors());
+app.use(cors(
+	{
+		origin:['https://'],
+		method: ['POST','GET'],
+		credentials:true
+	}
+));
 app.use(express.json());
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/crud_mern")
+mongoose.connect("mongodb+srv://sawantsaurabh164:mongoo123@cluster0.uwp3p1l.mongodb.net/crud_mern?retryWrites=true&w=majority&appName=Cluster0")
 
 
 app.get('/', (req,res) => {
