@@ -20,7 +20,7 @@ const Update_User = () => {
 
 	}
 	useEffect(()=>{
-		axios.get('http://localhost:3000/getUser/'+id)
+		axios.get('https://crud-mern-ten.vercel.app/getUser/'+id)
 		.then(res=>{
 			setName(res.data.name)
 			setEmail(res.data.email)
